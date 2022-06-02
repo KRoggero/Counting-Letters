@@ -1,0 +1,40 @@
+package com.Java24hrs;
+
+class wheel {
+	public static void main (String[] args) {
+		String phrase[] = {//array signatures are square brackets
+			"Just the other day", 
+			"How you doin'?", 
+			"Feeling blue",
+			"Hear me roar", 
+			"The North Remembers", 
+			"At your beck and call", 
+			"Autobots, roll out!", 
+			"Don't let me go!", 
+			"Don't hold me back!", 
+			"Burn them all",
+			
+		};
+		int[] letterCount = new int[26]; //integer array with 26 elements 
+		for (int count = 0; count < phrase.length; count++) {
+			String current = phrase[count]; 
+			char[] letters = current.toCharArray();
+			for (int count =0; count2 < letters.length; count2++) {
+				char lett = letters[count2];
+				if ( (letter >='A') & (lett <= 'Z') ) {
+					letterCount[lett - 'A']++; 
+				}
+			}
+		}
+		for (char count = 'A'; count <='Z'; count++) {
+			System.out.println(count + ": " + letterCount[count - 'A'] + " ");
+			if (count == 'M') {
+				System.out.println();
+			}
+		}
+		System.out.println();
+	} 
+
+		}
+	}
+	
